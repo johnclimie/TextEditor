@@ -3,9 +3,7 @@ const WebpackPwaManifest = require('webpack-pwa-manifest');
 const path = require('path');
 const { InjectManifest } = require('workbox-webpack-plugin');
 
-// TODO: Add and configure workbox plugins for a service worker and manifest file.
-// TODO: Add CSS loaders and babel to webpack.
-
+// Adds workbox plugins for service worker and manifest files
 module.exports = () => {
   return {
     mode: 'development',
@@ -46,6 +44,7 @@ module.exports = () => {
       }),
     ],
 
+    // Adds CSS Loader and Babel
     module: {
       rules: [
         {

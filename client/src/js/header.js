@@ -1,3 +1,4 @@
+// Creates logo in text form
 const header = `
 /*
        _____  ____________
